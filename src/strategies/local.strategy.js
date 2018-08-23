@@ -10,13 +10,13 @@ module.exports = function localStrategy(){
 		}, (username, password, done) => {
 
 			const url = "mongodb://mangosoft:abcd1234@ds125482.mlab.com:25482/nodejslibrary-app-mangosoft-2018";
-			const dbname = "libraryApp";
+			const dbname = "nodejslibrary-app-mangosoft-2018";
 
 			try {
 				MongoClient.connect(url,{useNewUrlParser:true} , 
 					function(err, db) {
 				  		if (err) throw err;
-					  	const dbo = db.db('libraryApp');
+					  	const dbo = db.db('nodejslibrary-app-mangosoft-2018');
 					 	const col = dbo.collection('users');
 					  	const findUser = col.findOne({username}, function(err, result) {
 					    if (err) throw err;

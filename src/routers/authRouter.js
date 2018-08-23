@@ -16,21 +16,21 @@ function router(nav1, nav2){
 	}).post((req, res)=>{
 		const {username, password} = req.body;
 		const url = "mongodb://mangosoft:abcd1234@ds125482.mlab.com:25482/nodejslibrary-app-mangosoft-2018";
-		const dbname = "libraryApp";
+		const dbname = "nodejslibrary-app-mangosoft-2018";
 
 			let client;
 			try {
 				MongoClient.connect(url,{useNewUrlParser:true} , 
 					function(err, db) {
 				  		if (err) throw err;
-					  	const dbo = db.db('libraryApp');
+					  	const dbo = db.db('nodejslibrary-app-mangosoft-2018');
 					 	const col = dbo.collection('users');
 					  	const findUser = col.findOne({username}, function(err, result) {
 					    if (err) throw err;
 					    if(result==null){
 							const user = {username, password};
 							const results = col.insertOne(user);
-							req.login(results.ops[0], ()=>{
+							req.login(user, ()=>{
 								db.close();
 								res.redirect('/auth/profile');
 							});

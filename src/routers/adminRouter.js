@@ -27,7 +27,7 @@ function router(nav, nav2){
 	adminRouter.route('/')
 		.get((req, res) => {
 			const url = "mongodb://mangosoft:abcd1234@ds125482.mlab.com:25482/nodejslibrary-app-mangosoft-2018";
-			const dbname = "libraryApp";
+			const dbname = "nodejslibrary-app-mangosoft-2018";
 
 			(async function mongo(){
 				let client;

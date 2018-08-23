@@ -15,15 +15,15 @@ const port = process.env.PORT || 3000;
 //const conn = require('./src/models/conn');
 
 const nav1 = [
-		  		{link:'/',title:"Home"},
-		  		{link:'/books',title:"Books"},
-		  		{link:'/auth/signin',title:"Sign In"},
-			];
+  		{link:'/',title:"Home"},
+  		{link:'/books',title:"Books"},
+  		{link:'/auth/signin',title:"Sign In"},
+	];
 const nav2 = [
 		{link:'/',title:"Home"},
 		{link:'/books',title:"Books"},
 		{link:'/auth/profile',title:"Profile"},
-];
+	];
 
 
 app.use(morgan('tiny'));

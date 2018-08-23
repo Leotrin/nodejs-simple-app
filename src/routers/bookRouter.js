@@ -12,7 +12,7 @@ function router(nav1, nav2){
 		next();
 	}).get((req,res)=>{
 
-			const url = "mongodb://localhost:27017";
+			const url = "mongodb://mangosoft:abcd1234@ds125482.mlab.com:25482/nodejslibrary-app-mangosoft-2018";
 			const dbname = "libraryApp";
 
 			(async function mongo(){
@@ -48,7 +48,7 @@ function router(nav1, nav2){
 		next();
 	}).get((req,res)=>{
 			const {id} = req.params;
-			const url = "mongodb://localhost:27017";
+			const url = "mongodb://mangosoft:abcd1234@ds125482.mlab.com:25482/nodejslibrary-app-mangosoft-2018";
 			const dbname = "libraryApp";
 
 			(async function mongo(){

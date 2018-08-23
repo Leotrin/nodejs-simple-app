@@ -15,7 +15,7 @@ function router(nav1, nav2){
 		}
 	}).post((req, res)=>{
 		const {username, password} = req.body;
-		const url = "mongodb://localhost:27017/libraryApp";
+		const url = "mongodb://mangosoft:abcd1234@ds125482.mlab.com:25482/nodejslibrary-app-mangosoft-2018";
 		const dbname = "libraryApp";
 
 			let client;

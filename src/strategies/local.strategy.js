@@ -9,7 +9,7 @@ module.exports = function localStrategy(){
 			passwordField:"password"
 		}, (username, password, done) => {
 
-			const url = "mongodb://localhost:27017";
+			const url = "mongodb://mangosoft:abcd1234@ds125482.mlab.com:25482/nodejslibrary-app-mangosoft-2018";
 			const dbname = "libraryApp";
 
 			try {

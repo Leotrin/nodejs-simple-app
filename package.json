@@ -12,26 +12,27 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "^4.4.1",
     "chalk": "^2.4.2",
-    "cookie-parser": "^1.4.4",
+    "cookie-parser": "^1.4.5",
     "debug": "^3.2.6",
-    "ejs": "^2.6.1",
+    "ejs": "^2.7.4",
     "express": "^4.17.1",
-    "express-session": "^1.16.1",
+    "express-session": "^1.17.0",
     "jquery": "^3.4.1",
-    "mongodb": "^3.2.7",
-    "morgan": "^1.9.1",
-    "mysql": "^2.17.1",
-    "nodemon": "^1.19.1",
-    "passport": "^0.4.0",
+    "mongodb": "^3.5.5",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "nodemon": "^1.19.4",
+    "passport": "^0.4.1",
     "passport-local": "^1.0.0",
+    "popper.js": "^1.16.1",
     "relation": "^0.1.0"
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.3"
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-import": "^2.20.1"
   },
   "nodemonConfig": {
     "restartable": "rs",
